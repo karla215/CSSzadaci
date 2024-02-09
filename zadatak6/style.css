@@ -1,0 +1,20 @@
+div {
+    background-color: lightgrey;
+  }
+.border1 {
+    width: 30vw;
+    height: 30vw;
+    border: 10px solid grey;
+    margin: 30%;
+  }
+  .border2 {
+    background-color: red;
+    width: 15vw;
+    height: 15vw;
+  }
+  .border3 {
+    background-color: blue;
+    width: 15vw;
+    height: 15vw;
+    margin: 0% 0% 0% 50%;
+  }
