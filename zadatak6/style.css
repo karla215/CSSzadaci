@@ -1,6 +1,7 @@
 div {
     background-color: lightgrey;
   }
+<<<<<<< HEAD
 
 body>div {
     width: 30vw;
@@ -19,6 +20,8 @@ div div:nth-child(2) {
     height: 15vw;
     margin: 0% 0% 0% 50%;
 }
+=======
+>>>>>>> 3e4b8c4b3872241444d04ca466e550bf9a0f0ad9
 .border1 {
     width: 30vw;
     height: 30vw;
