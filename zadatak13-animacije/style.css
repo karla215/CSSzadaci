@@ -1,0 +1,111 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  .wrapper div {
+    background-color: #f93;
+    border: 4px solid #333;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 90px;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    text-align: center;
+  }
+  @keyframes redcircle {
+    100% {
+        transform: scale(1.1);
+        background: red;
+    }
+  }
+  div div:nth-child(1){
+    animation: redcircle 0.5s linear infinite alternate;
+  }
+  @keyframes droprotate {
+    0% {
+              transform: rotate(0deg);
+    }
+    50% {
+      transform: translate(0, 300px);
+      transform: rotate(180deg) scale(0.8);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  div div:nth-child(2){
+    animation: droprotate 2s linear infinite alternate;
+  }
+
+  @keyframes makesquare {
+    0% {
+      top: 0%;
+      transform: rotate(0deg);
+    }
+    50% {
+      top: 50%;
+      border-radius: 0%;
+      transform: rotate(180deg);
+    }
+    100% {
+      top: 80%;
+      transform: rotate(360deg);
+    }
+  }
+  div div:nth-child(3){
+    animation: makesquare 3s linear infinite;
+  }
+  @keyframes jump {
+    100% {
+        transform: translate(0, -20px);
+    }
+  }
+  div div:nth-child(4){
+    animation: jump 0.5s ease-in infinite alternate;
+  }
+  @keyframes rotatedown {
+    0% {
+        transform: translate(0px, 0px);
+      }
+    50% {
+        transform: translate(0, 300px);
+      }
+    75% {
+        transform: translate(0, 300px);
+        transform: rotate(180deg);
+        background: red;
+      }
+    100% {
+      transform: translate(0, 300px);
+              transform: rotate(360deg);
+              background: red;
+    }
+  }
+  div div:nth-child(5){
+    animation: rotatedown 3s linear infinite;
+  }
+
+  @keyframes doublescale {
+    100% {
+        transform: scale(2);
+    }
+  }
+  div div:nth-child(6):hover{
+    animation: doublescale 0.5s linear infinite alternate;
+  }
